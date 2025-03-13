@@ -21,10 +21,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
-
 header {
     margin-left: 30px;
     margin-right: 30px;
@@ -53,6 +49,10 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+}
+
+p {
+    padding: 0;
 }
 
 footer {
