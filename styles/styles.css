@@ -9,7 +9,7 @@ body {
     font-family: Roboto, Arial, sans-serif;
 }
 
-/* Class Selectors */
+
 .box {
     margin: 1rem;
     padding: 1rem;
@@ -30,7 +30,7 @@ nav a {
     padding: 5px 10px;
     display: inline-flexbox;
     gap: 15px;
-    /* Fixed invalid flexbox usage */
+
 }
 
 nav a:hover {
