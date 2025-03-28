@@ -1,111 +1,192 @@
-:root {
-    --primary-color: #6b4b3e;
-    --secondary-color: #c49e85;
-    --accent1-color: #ffd6af;
-    --accent2-color: #bea7e5;
-    --font-family: 'Montserrat', 'Open Sans' sans-serif;
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #FFD6AF;
 }
 
-/* Apply general styling */
+/* Header */
+header {
+    background-color: #6B4B3E;
+    padding: 5px 10px;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
 nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    padding: 10px 5px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    font-family: var(--font-family)
+    gap: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-nav a {
-    margin-right: 40px;
-    color: var(--primary-color);
+nav ul li {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+nav ul li a {
     text-decoration: none;
-    color: var(--accent1-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    text-transform: capitalize;
+    padding-inline: 4px;
 }
-
 
 nav a:hover {
-    color: var(--accent2-color);
+    background-color: #FFD6AF;
+    color: #6B4B3E;
 }
 
-.sociallinks {
-    text-decoration: none;
-    color: var(--accent1-color);
-    align-items: center;
-    align-content: center;
-}
-
-.sociallinks img {
-    align-content: center;
-
-}
-
-body {
-    font-family: var(--font-family);
-
-}
-
-h1 {
-    font-size: 30px;
-    color: var(--accent1-color);
-    font-family: var(--font-family);
-    font-weight: bolder;
-    background-color: #6b4b3e;
-}
-
-h2 {
-    font-size: 24px;
-    color: var(--primary-color);
-    font-family: var(--font-family);
-    font-weight: bolder;
-}
-
-h3 {
-    font-size: 20px;
-    color: var(--primary-color);
-    font-family: var(--font-family);
-    font-weight: bolder;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-    font-family: var(--font-family);
-}
-
-h4 {
-    font-size: 18px;
-    color: var(--primary-color);
-    font-family: var(--font-family);
-    font-weight: bolder;
-}
-
+/* Hero Section */
 .hero {
-    padding: 100px;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url('../images/rafting-banner.jpg') no-repeat center center / cover;
+    color: #6B4B3E
+}
+
+
+.hero-content {
+    width: 80%;
+}
+
+.hero-content h1 {
+    text-align: center;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding-right: 15px;
     text-align: justify;
-    color: var(--secondary-color);
-    position: relative;
-    padding: 16px;
-
+    font-weight: normal;
 }
 
-.hero h1 {
-    position: absolute;
+.image-box {
+    width: 40%;
+    border-radius: 10px;
+    size: 40px;
 }
 
-
-
-footer {
-    background-color: var(--primary-color);
-
+/* History Section */
+.history {
+    width: 100%;
+    padding: 20px;
+    background-color: #6B4B3E;
+    align-items: center;
+    color: white;
 }
 
-.footer p {
+.history h2 {
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 20px;
-    color: var(--accent1-color);
-    font-family: var(--font-family);
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.history-content p {
+    margin: 0 20px;
     text-align: justify;
+    padding-right: 20px;
+}
+
+.history img {
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+
+
+}
+
+/* Adventure Section */
+.adventure {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #6B4B3E;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .history-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
