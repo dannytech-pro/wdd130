@@ -152,6 +152,113 @@ nav a:hover {
     border-radius: 10px;
 }
 
+/* contact us styling */
+.contact-section {
+    padding: 40px;
+}
+
+.contact-section iframe {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.team-section {
+    background: #f8f2f2;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(208, 213, 138, 0.1);
+}
+
+.team-section h2 {
+    color: #6B4B3E;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Ensures images fill the space */
+    border-radius: 10px;
+}
+
+.team-member figcaption {
+    margin-top: 10px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.subscribe-checkbox {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #6B4B3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #C49E85;
+}
+
+.comment-form {
+    background-color: #6B4B3E;
+    padding: 20px;
+    color: white;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -167,6 +274,13 @@ footer {
     color: white;
     text-align: center;
     padding-left: 30%;
+}
+
+.footer p a {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding-left: 20%;
 }
 
 .social-icons {
