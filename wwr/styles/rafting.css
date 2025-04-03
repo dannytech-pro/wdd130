@@ -158,9 +158,10 @@ nav a:hover {
 }
 
 .contact-section iframe {
-    max-width: 100%;
-    height: auto;
-    border: none;
+    width: 600px;
+    height: 450px;
+    border: 0;
+
 }
 
 .team-section {
